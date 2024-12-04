@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="month-container" id="month-container">
+    <div class="time-container" id="currentTime"></div>
+    <button id="export-button">Export Note Data</button>
+        
+    </div>
+    <div id="note-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Add a Note</h2>
+            <div class="modal-body">
+                <textarea id="note-text" placeholder="Write your note here..."></textarea>
+                <div class="icon-palette">
+                    <h3>Select an Icon</h3>
+                    <div class="icons">
+                        <img src="img/Bathing.jpg" alt="Bath Icon" class="icon" data-icon="Bathing.png">
+                        <img src="img/blood.png" alt="Heart Icon" class="icon" data-icon="blood.png">
+                        <img src="img/hairwash.jpg" alt="Car Icon" class="icon" data-icon="hairwash.png">
+                        <img src="img/icry.jpeg" alt="Car Icon" class="icon" data-icon="icry.png">
+                        <img src="img/Heart-break.png" alt="Car Icon" class="icon" data-icon="Heart-break.png">
+                        <img src="img/bedsheet.jpg" alt="Car Icon" class="icon" data-icon="bedsheet.png">
+                        <img src="img/serum.png" alt="Car Icon" class="icon" data-icon="serum.png">
+                        <img src="img/water.png" alt="Car Icon" class="icon" data-icon="water.png">
+                        <img src="img/Homecleaning.jpg" alt="Car Icon" class="icon" data-icon="Homecleaning.png">
+                        <img src="img/eyebrow.jpg" alt="Car Icon" class="icon" data-icon="eyebrow.png">
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <button id="save-note-button">Save Note</button>
+        </div>
+    </div>
+    
+    
+    <button class="back-button" onclick="goBack()">Go Back</button>
+
+    <script src="script-full.js"></script>
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Task's</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Todoii is a simple todo app. Use it in your daily task to plan out ahead and manage your life better.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Task.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+  <!-- <div class="flex-container"> -->
+    <div class="app_container">
+
+      <div class="bodyhead">
+        <div class="todoname">
+          <label for="todonamechange">Name</label>
+          <textarea id="todonamechange" maxlength="30" cols="100" rows="1" placeholder="To do List" onfocus="this.placeholder=''" onblur="this.placeholder='To Do List'"></textarea>
+        </div>
+        <div class="date">
+          <p id="dato">
+            <span id="day"></span>
+            <span id="dayofweek"></span>
+            <span id="month"></span>
+            <span id='year'></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="app-body">
+        <div class="input-container">
+          <input id="listinput" autofocus placeholder="Add Something..." autocomplete="off" required maxlength="43" aria-label="input">
+          <button  id="additembtn" aria-label="Add">
+            <i class="fas fa-plus fa-lg"></i>
+          </button>
+        </div>
+        <ul class="ullist"></ul>
+      </div>
+
+      
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='script-task.js'></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

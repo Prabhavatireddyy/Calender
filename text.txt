@@ -1,0 +1,12 @@
+To delete the full data base write this in console
+
+```
+indexedDB.databases().then(dbs => {
+    dbs.forEach(db => {
+        indexedDB.deleteDatabase(db.name);
+        console.log(`Deleted database: ${db.name}`);
+    });
+});
+```
+
+localStorage.clear();
